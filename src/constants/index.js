@@ -1,5 +1,5 @@
 import Bitrush from "../assets/projects/Bitrush.png";
-import AIchatbot from "../assets/projects/AIchatbot.png";
+import AIchatbot from "../assets/projects/aichatbot.png";
 import jarvis from "../assets/projects/jarvis.png"
 import asr from "../assets/projects/asr.png"
 export const HERO_CONTENT = `✨ Passionate Frontend Developer crafting responsive, scalable, and modern web applications with a strong focus on intuitive UI/UX design.`;
