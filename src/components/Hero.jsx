@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants"
 import chanikya from "../assets/projects/Chanikya.jpg";
 import { motion } from "framer-motion"
-import Resume from "../assets/Malla_Chanikya_Resume.pdf";
+import Resume from "../assets/Malla_Chanikya_Satish_resume.pdf";
 
 const container=(delay)=>({
    hidden:{x: -100, opacity: 0},
@@ -22,16 +22,23 @@ function Hero() {
                   variants={container(0)}
                   initial='hidden'
                   animate="visible"
-                  className='pb-16 text-6xl font-serif tracking-tight lg:mt-16 lg:text-7xl text-gray-500'
+                  className='pb-16 text-4xl font-serif tracking-tight lg:mt-16 lg:text-7xl text-gray-500'
                   >
-                    Hi, I'm Chanikya Satish
+                    Welcome to my Portfolio
                   </motion.h1>
-                 <motion.span 
+                  <motion.span 
                     variants={container(0.5)}
                     initial='hidden'
                     animate="visible"
                  className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
-                    Frontend Developer
+                    My name is Chanikya Satish Malla
+                 </motion.span>
+                 <motion.span 
+                    variants={container(0.5)}
+                    initial='hidden'
+                    animate="visible"
+                 className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-2xl tracking-tight text-transparent'>
+                    Frontend Developer | ReactJS | UI/UX Enthusiast
                  </motion.span>
                  <motion.p 
                  variants={container(1)}
@@ -41,7 +48,7 @@ function Hero() {
                    <strong> {HERO_CONTENT}</strong>
                  </motion.p>
                  <div>
-                 <a href={Resume} download="Chanikya_Satish_Resume.pdf" className='w-6 h-6 md:w-8 md:h-8'>
+                 <a href={Resume} download="Malla_Chanikya_Satish_Resume.pdf" className='w-6 h-6 md:w-8 md:h-8'>
           <button className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-slate-400 via-fuchsia-300 text-white mb-4">
             <span className='block bg-zinc-800 hover:bg-zinc-400 rounded-full px-8 py-3'> Download Resume</span>
             </button>

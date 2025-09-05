@@ -1,14 +1,15 @@
 import Bitrush from "../assets/projects/Bitrush.png";
-import Food from "../assets/projects/Food_delivery.png";
+import AIchatbot from "../assets/projects/AIchatbot.png";
 import jarvis from "../assets/projects/jarvis.png"
+import asr from "../assets/projects/asr.png"
+export const HERO_CONTENT = `✨ Passionate Frontend Developer crafting responsive, scalable, and modern web applications with a strong focus on intuitive UI/UX design.`;
+export const ABOUT_TEXT = `I am a Frontend Developer with 2+ years of professional experience, specializing in building and optimizing scalable, responsive, and user-centric web applications. My expertise includes JavaScript (ES6+), React.js, Redux Toolkit, HTML5, CSS3, Bootstrap, Tailwind CSS, and Material UI, enabling me to deliver modern, clean, and interactive UI designs.
 
-export const HERO_CONTENT = `Passionate Frontend Developer specializing in crafting responsive, scalable, and modern web applications with a strong focus on intuitive UI development.`;
-export const ABOUT_TEXT = `I am a Frontend Developer with over 2+ years of experience specializing in building and optimizing scalable, responsive web applications. I have strong expertise in JavaScript, React.js, Redux, HTML5, CSS3, Bootstrap, Tailwind CSS, and Material UI. 
-I focus on creating user-friendly interfaces, integrating RESTful APIs, and ensuring cross-device compatibility with a keen eye on performance and responsiveness. 
-I designed some of dashboards using the Chart.JS with real time fetching data. 
-I am also skilled in working with SQL databases and tools like Git, GitHub, Postman, Jira, and VS Code. 
-I am passionate about writing clean, efficient code, solving technical problems, and continuously enhancing my skills through learning and real-world projects.
-I am committed to delivering high-quality solutions that align with both user expectations and modern web standards.`;
+I have successfully developed real-time dashboards using Chart.js, implemented REST API integrations for seamless data handling, and built cross-device compatible applications that enhance user experience. Alongside frontend expertise, I have experience working with SQL databases for data management and reporting.
+
+My workflow is powered by industry-standard tools such as Git, GitHub, Jira, Postman, and VS Code, ensuring collaborative development and efficient project delivery. I take pride in writing clean, maintainable code, applying performance optimizations like debouncing, lazy loading, and code splitting to enhance efficiency.
+
+Passionate about UI/UX, problem-solving, and continuous learning, I consistently explore new technologies to stay aligned with modern web standards. My goal is to deliver high-quality solutions that balance technical excellence with real-world business impact.`;
 
 export const EXPERIENCES = [
   {
@@ -35,19 +36,28 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  
+  {
+    title: "ASR Solar Mission - Live - Sep 2025",
+    image: asr,
+    description:
+      "I built the ASR Solar Mission website end-to-end with responsive design across all devices. It includes pages like Home, About, Services, Projects, Brands, and Contact, with interactive features such as a mobile call button. The site was deployed using Vercel with DNS setup for production at asrsolarmission.com.",
+    technologies: ["HTML", "Bootstrap", "React", "JavaScript", "Git", "Vercel", "DNS setup"],
+    link: "https://asrsolarmission.com"
+  },
   {
     title: "BiteRush - Web App",
     image: Bitrush,
     description:
       "Built a Swiggy-like food delivery app leveraging real-time APIs to showcase live restaurant data and menus. Created a responsive and user-friendly interface using React, Bootstrap, and Material UI. Implemented Redux for dynamic cart state management and integrated secure authentication for smooth performance.",
-    technologies: ["HTML", "TailwindCSS", "React", "Redux", "JavaScript"],
+    technologies: ["HTML", "Bootstrap", "React", "Redux", "JavaScript"],
   },
   {
-    title: "HungryHub Food Delivery Website",
-    image: Food,
-    description:
-      "A modern food delivery platform designed to provide users with a seamless and intuitive experience when browsing restaurant menus, placing orders, and tracking deliveries. Designed in responsive way to fit for every screen size.",
-    technologies: ["HTML", "CSS", "React", "JavaScript"],
+    title: "AI Chatbot - Live",
+    image: AIchatbot,
+    description:"Developed a chatbot for instant user query responses using Gemini AI API,Enabled contextual responses with support for custom data sources.",
+    technologies: ["HTML", "CSS", "JavaScript", "Gemini AI API"],
+    link: "https://aichatbot-smoky-five.vercel.app/"
   },
   {
     title: "Jarvis - Personal Voice assistance",

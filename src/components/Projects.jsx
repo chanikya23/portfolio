@@ -17,6 +17,7 @@ function Projects() {
                 initial={{opacity:0, x:-100}}
                 transition={{duration:1}}
                 className='w-full lg:w-1/4'>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <img 
                   src={project.image} 
                   width={150}
@@ -24,13 +25,15 @@ function Projects() {
                   alt={project.title}
                   className="mb-6 rounded"> 
                   </img>
+                </a>
                 </motion.div>
                 <motion.div 
                 whileInView={{opacity:1, x:0}}
                 initial={{opacity:0, x:100}}
                 transition={{duration:1}}
                 className='w-full max-w-xl lg:w-3/4'>
-                    <h6 className='mb-2 font-semibold'>{project.title}</h6>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <h6 className='mb-2 font-semibold'>{project.title}</h6></a>
                     <p className='mb-4 text-neutral-400'>{project.description}</p>
                     {project.technologies.map((tech,index)=>(
                         <span key={index} 
